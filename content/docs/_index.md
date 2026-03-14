@@ -1,18 +1,49 @@
 ---
-title: Documentation
-next: first-page
+linkTitle: "Documentation"
+title: Introduction
 ---
 
-This is a demo of the theme's documentation layout.
+👋 Hello! Welcome to the SpecGate documentation!
 
-## Hello, World!
+## What is SpecGate?
 
-```go {filename="main.go"}
-package main
+SpecGate is a fast, lightweight CLI tool for enforcing OpenAPI specification (OAS) readiness. Designed for technical writers and developers who care about API documentation quality, it evaluates OAS files against a set of quality rules and surfaces errors and warnings before they reach production.
 
-import "fmt"
+## Features
 
-func main() {
-    fmt.Println("Hello, World!")
-}
+* **Error and warning rules**: Evaluate OAS files against a set of error and warning rules, surfacing issues before they reach production
+* **Strict mode**: Promote warnings to errors for teams that want zero tolerance on documentation gaps
+* **AI-powered suggestions**: Generate suggested summaries and descriptions for operations that are missing them using an LLM
+* **CI-ready**: Exits with a non-zero status code when errors are found, allowing for integration with GitHub Actions or GitLab CI
+* **Rule transparency**: Run `specgate rules` to see which rules are being enforced and how they're categorized
+
+## Example output
+
+```bash
+ERRORS
+------
+
+Missing operation summaries for 1 operation(s):
+
+- GET /menu/{itemId}
+
+Missing error responses (4xx/5xx/default) for 4 operation(s):
+
+- POST /orders
+- GET /loyalty/{customerId}
+- POST /loyalty/{customerId}
+- GET /menu
+
+WARNINGS
+--------
+
+Missing operation descriptions for 3 operation(s):
+
+- GET /menu/{itemId}
+- GET /loyalty/{customerId}
+- POST /loyalty/{customerId}
 ```
+
+## Next steps
+
+Head over to the [Installation guide](/docs/installation) to get started!
