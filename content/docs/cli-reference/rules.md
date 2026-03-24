@@ -27,3 +27,5 @@ prev: /docs
 | Rule | Reason | 
 | :--- | :-------- |
 | Operations should have a description | Descriptions provide additional context beyond the summary, such as behavior and edge cases. | 
+| Operations should have an `operationId`| Missing `operationIds` make SDK method and function names unpredictable and hard to read. | 
+| Operations should have a meaningful `tag` | Using tags can help enhance readability in your API documentation, as it groups related requests together. | 
