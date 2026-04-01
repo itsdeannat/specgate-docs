@@ -1,6 +1,6 @@
 ---
 title: specgate rules
-weight: 3
+weight: 4
 tags:
   - Docs
   - Guide
