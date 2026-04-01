@@ -22,7 +22,7 @@ Edit the config, then rerun:
  specgate check
 ```
 
-# Reset file settings
+## Reset file settings
 
 If you need to reset the file settings to their defaults, run `specgate init --force`. This command overwrites the configuration file.
 
