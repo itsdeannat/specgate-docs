@@ -8,7 +8,7 @@ next: /docs/guide
 prev: /docs
 ---
 
-SpecGate's behavior is controlled by a `.specgate.yaml` file. The file must live in the project root.
+To configure SpecGate's behavior, you need a `.specgate.yaml` configuration file. The file must live in the project root.
 
 ## Create a configuration file
 
