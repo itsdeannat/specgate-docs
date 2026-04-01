@@ -1,6 +1,6 @@
 ---
 title: specgate advise
-weight: 2
+weight: 3
 tags:
   - Docs
   - Guide
