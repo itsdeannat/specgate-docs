@@ -19,7 +19,7 @@ Make sure you have completed the [installation steps](/docs/installation).
 
 ### Step 1: Download the sample OAS file
 
-The SpecGate GitHub repository includes a [sample OAS file](https://github.com/itsdeannat/specgate-cli/blob/main/testdata/oas.json) with documentation gaps you can use to explore the CLI. 
+The SpecGate GitHub repository includes a [sample OAS file](https://github.com/itsdeannat/specgate/blob/main/testdata/oas.json) with documentation gaps you can use to explore the CLI. 
 
 ### Step 2: Generate a config file
 

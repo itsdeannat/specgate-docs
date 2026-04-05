@@ -33,7 +33,7 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/itsdeannat/specgate-cli"
+      url: "https://github.com/itsdeannat/specgate"
       params:
         icon: github
 
