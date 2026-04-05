@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: SpecGate CLI
+title: SpecGate CLI 0.4.0
 
 # import hextra as module
 module:
