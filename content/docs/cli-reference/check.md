@@ -25,6 +25,20 @@ Additionally, incorrect specs can cause SDK generators to produce broken or inco
 
 Warnings are rules the spec *should* pass to be production-ready. A spec with warnings is functional but has documentation gaps that could reduce clarity and usability for API users or affect SDK documentation quality.
 
+## OAS structural issues
+
+If SpecGate finds any structural issues with your OAS file, it outputs to the issues to a `.specgate.log` file. OAS structural issues do not fail the check. 
+
+```bash {filename="terminal"}
+OpenAPI Structural Issues
+=========================
+
+invalid paths: invalid path /api/menu/: invalid operation GET: example SuccessfulResponse: Error at "/0": value must be an object
+Schema:
+  {
+    ...
+  }
+```
 
 ## Usage
 
@@ -50,5 +64,13 @@ Use the `--strict` option to treat all warnings as errors.
 
 ```bash {filename="terminal"}
 specgate check [file] --strict
+```
+
+### Verbose
+
+Use the `--verbose` option to display a detailed report of all errors and warnings found. 
+
+```bash {filename="terminal"}
+specgate check [file] --verbose
 ```
 
