@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: SpecGate CLI 0.4.0
+title: SpecGate CLI 1.1.1
 
 # import hextra as module
 module:
@@ -20,7 +20,7 @@ menu:
   main:
     - name: Docs
       pageRef: /docs
-      weight: 1
+      weight: 1 
     - name: About
       pageRef: /about
       weight: 2
