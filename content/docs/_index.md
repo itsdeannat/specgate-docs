@@ -20,18 +20,9 @@ SpecGate is a fast, lightweight CLI tool for enforcing OpenAPI specification (OA
 ## Example output
 
 ```bash
-Loaded config from .specgate.yaml
+Loaded config from .specgate.yaml ✅
 
-oas.json - 5 errors, 1 warning
-
-error     Missing operation summary                   GET /menu/{itemId}
-error     Missing error responses (4xx/5xx/default)   GET /menu
-error     Missing error responses (4xx/5xx/default)   POST /orders
-error     Missing parameter description               GET /menu/{itemId}
-error     Missing parameter description               GET /orders/{orderId}
-warning   Missing operation description               GET /menu/{itemId}
-
-Run with --strict to treat warnings as errors.
+oas.json - 9 errors, 3 warnings
 ```
 
 ## Next steps
