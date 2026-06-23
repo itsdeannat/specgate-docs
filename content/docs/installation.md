@@ -45,7 +45,7 @@ Run this command:
 You should see output similar to:
 
 ```bash
-specgate version 0.1.0
+specgate version 1.1.1
 ```
 
 ### Step 4: Move the binary to your PATH (recommended)
