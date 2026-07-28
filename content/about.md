@@ -36,15 +36,14 @@ SpecGate is a binary written in Go. It uses the [kin-openapi](https://github.com
 
 ## Current status
 
-SpecGate is at **v0.1.0** and is actively in development. It is currently in pre-release. The core functionality is working but the ruleset is still growing.
+SpecGate is at v1.1.1 and is actively maintained. 
 
 Planned for future releases:
 
 * Additional validation rules
 * Configurable rule sets
 * Homebrew support for easier installation
-* CI integration documentation
 
 ## Who is behind this project?
 
-SpecGate is built and maintained by Deanna Thompson, a senior technical writer specializing in developer documentation, end-user documentation, and documentation workflow automation. The project grew out of firsthand experience working with OpenAPI specs and noticing how often small documentation gaps caused real problems downstream.
+SpecGate is built and maintained by Deanna Thompson, a senior technical writer specializing in API documentation, docs as code, and developer experiences. The project grew out of firsthand experience working with OpenAPI specs and noticing how often small documentation gaps caused real problems downstream.
