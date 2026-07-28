@@ -19,7 +19,7 @@ Make sure you have completed the [installation steps](/docs/installation).
 
 ### Step 1: Download the sample OAS file
 
-The SpecGate GitHub repository includes a [sample OAS file](https://github.com/itsdeannat/specgate/blob/main/testdata/oas.json) with documentation gaps you can use to explore the CLI. 
+The SpecGate GitHub repository includes a [sample OAS file](https://github.com/itsdeannat/specgate/blob/main/example/oas.json) with documentation gaps you can use to explore the CLI. 
 
 ### Step 2: Generate a config file
 
@@ -32,7 +32,7 @@ To generate a config file, run `specgate init`. This creates the config file in 
 Run the `check` command against the sample spec:
 
 ```bash{filename="terminal"}
-specgate check oas.json
+specgate check example/oas.json
 ```
 
 You should see output like this:
@@ -40,7 +40,7 @@ You should see output like this:
 ```bash{filename="terminal"}
 Loaded config from .specgate.yaml ✅
 
-testdata/oas.json - 9 errors, 3 warnings
+example/oas.json - 9 errors, 3 warnings
 ```
 
 Errors must be resolved before the spec is considered production-ready. Warnings indicate documentation gaps that reduce spec quality but do not block the check.
@@ -54,7 +54,7 @@ Errors must be resolved before the spec is considered production-ready. Warnings
 Run the check again with the `--strict` flag to treat warnings as errors:
 
 ```bash {filename="terminal"}
-specgate check oas.json --strict
+specgate check example/oas.json --strict
 ```
 
 You should see all issues reported as errors:
@@ -62,7 +62,7 @@ You should see all issues reported as errors:
 ```bash{filename="terminal"}
 Loaded config from .specgate.yaml ✅
 
-testdata/oas.json - 12 errors
+example/oas.json - 12 errors
 ```
 
 ### Step 5: See a detailed SpecGate report
@@ -70,11 +70,11 @@ testdata/oas.json - 12 errors
 If you'd like to see which errors and warnings SpecGate found, you can run the check with the `--verbose` flag:
 
 ```bash {filename="terminal"}
-specgate check oas.json --verbose
+specgate check example/oas.json --verbose
 
 Loaded config from .specgate.yaml ✅
 
-testdata/oas.json - 9 errors, 3 warnings
+example/oas.json - 9 errors, 3 warnings
 
 error     Missing operation summary                   GET /menu/{itemId}
 error     Missing error responses (4xx/5xx/default)   POST /orders
@@ -101,7 +101,7 @@ Run the `advise` command to generate suggested summaries and descriptions for op
 {{< /callout >}}
 
 ```bash {filename="terminal"}
-specgate advise oas.json
+specgate advise example/oas.json
 ```
 
 {{% /steps %}}
